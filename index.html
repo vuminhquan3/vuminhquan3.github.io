@@ -7,23 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- PRELOADER -->
     <div class="preloader">
         <div class="preloader-content">
-            <img src="logo.png" alt="TechMpower" class="preloader-logo">
-            <div class="preloader-text">TechMpower</div>
+            <div class="preloader-text animated-gradient">TechMpower</div>
             <div class="preloader-bar"></div>
         </div>
     </div>
 
-    <!-- Navigation -->
+    <!-- Navigation - NO LOGO -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="logo.png" alt="TechMpower Logo" class="logo">
                 <span class="brand-text">TechMpower</span>
             </div>
             <ul class="nav-menu">
@@ -42,89 +40,138 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero reveal">
+    <!-- Hero Section - NATIONAL GEOGRAPHIC STYLE -->
+    <section class="hero hero-full reveal">
+        <div class="hero-image-container">
+            <img src="kid-using-tech.jpg" alt="Trẻ em sử dụng công nghệ" class="hero-background-image">
+            <div class="hero-overlay-gradient"></div>
+        </div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
+            <div class="hero-content hero-content-large">
+                <h1 class="hero-title editorial">
                     Thu hẹp khoảng cách công nghệ,<br>
                     <span class="highlight">từng chiếc PC một</span>
                 </h1>
-                <p class="hero-subtitle">Bridging the Digital Divide, One PC at a Time</p>
-                <a href="donate.html" class="btn btn-primary btn-large">Ủng Hộ Ngay</a>
+                <p class="hero-subtitle editorial">Bridging the Digital Divide, One PC at a Time</p>
+                <a href="donate.html" class="btn btn-primary btn-large btn-animated">Ủng Hộ Ngay</a>
             </div>
         </div>
-        <div class="hero-overlay"></div>
     </section>
 
-    <!-- Impact Banner -->
-    <section class="impact-banner reveal reveal-delay-1">
+    <!-- About Section - FULL WIDTH IMAGE -->
+    <section class="about-section about-fullwidth reveal">
+        <div class="about-image-wrapper">
+            <div class="about-image-large">
+                <img src="kid-using-tech.jpg" alt="Trẻ em tiếp cận công nghệ" class="about-main-photo">
+            </div>
+            <div class="about-stats-overlay">
+                <div class="stat-box">
+                    <div class="stat-number counter-number" data-target="3250000">0</div>
+                    <div class="stat-label">VNĐ = 1 Máy tính</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-content-wrapper">
+            <div class="container">
+                <div class="about-content-large">
+                    <div class="section-header editorial">
+                        <h2 class="section-title-editorial">Về TechMpower</h2>
+                        <div class="divider-editorial"></div>
+                    </div>
+                    <p class="about-intro-large">
+                        TechMpower là dự án từ thiện <strong>do học sinh lãnh đạo</strong>, với sứ mệnh xây dựng và quyên góp máy tính cho trẻ em khó khăn tại các trại trẻ mồ côi ở Việt Nam.
+                    </p>
+                    <p class="about-text">
+                        Chúng tôi tin rằng <strong>công nghệ là chìa khóa</strong> mở ra tương lai, và mọi trẻ em đều xứng đáng có cơ hội tiếp cận với nó.
+                    </p>
+                    
+                    <!-- Trust Badges - REDESIGNED -->
+                    <div class="trust-badges-editorial">
+                        <div class="trust-badge-editorial">
+                            <span class="badge-icon-large">🏫</span>
+                            <div>
+                                <h4>Dự Án Học Đường</h4>
+                                <p>Được giám sát bởi nhà trường</p>
+                            </div>
+                        </div>
+                        <div class="trust-badge-editorial">
+                            <span class="badge-icon-large">📸</span>
+                            <div>
+                                <h4>Minh Bạch 100%</h4>
+                                <p>Cập nhật hình ảnh thực tế</p>
+                            </div>
+                        </div>
+                        <div class="trust-badge-editorial">
+                            <span class="badge-icon-large">💯</span>
+                            <div>
+                                <h4>Tác Động Thật</h4>
+                                <p>Từng máy tính được theo dõi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#process" class="btn btn-secondary btn-animated">
+                        Xem Quy Trình →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Banner - WARM COLORS -->
+    <section class="impact-banner impact-banner-warm reveal">
         <div class="container">
-            <div class="banner-content">
-                <div class="banner-icon">💻</div>
-                <h2>3.25 Triệu VNĐ = 1 Máy Tính Cho Trẻ Em Mồ Côi</h2>
-                <p>Mỗi đóng góp của bạn sẽ mang đến cơ hội học tập và phát triển cho trẻ em khó khăn</p>
+            <div class="banner-content banner-editorial">
+                <div class="banner-icon-large">💻</div>
+                <h2 class="banner-title-editorial">3.25 Triệu VNĐ = 1 Máy Tính Cho Trẻ Em Mồ Côi</h2>
+                <p class="banner-text-editorial">Mỗi đóng góp của bạn sẽ mang đến cơ hội học tập và phát triển cho trẻ em khó khăn</p>
             </div>
         </div>
     </section>
 
     <!-- Impact Counters -->
-    <section class="impact-counters reveal reveal-delay-2">
+    <section class="impact-counters impact-counters-warm reveal">
         <div class="container">
-            <div class="counters-grid">
-                <div class="counter-item">
-                    <div class="counter-number" data-target="0">0</div>
-                    <div class="counter-label">PC đã tặng</div>
+            <div class="counters-grid counters-editorial">
+                <div class="counter-item counter-editorial">
+                    <div class="counter-number-editorial counter-number" data-target="0">0</div>
+                    <div class="counter-label-editorial">PC đã tặng</div>
                 </div>
-                <div class="counter-item">
-                    <div class="counter-number" data-target="0">0</div>
-                    <div class="counter-label">Trại đã giúp</div>
+                <div class="counter-item counter-editorial">
+                    <div class="counter-number-editorial counter-number" data-target="0">0</div>
+                    <div class="counter-label-editorial">Trại đã giúp</div>
                 </div>
-                <div class="counter-item">
-                    <div class="counter-number" data-target="0">0</div>
-                    <div class="counter-label">Tổng tiền quyên góp (VNĐ)</div>
+                <div class="counter-item counter-editorial">
+                    <div class="counter-number-editorial counter-number" data-target="0">0</div>
+                    <div class="counter-label-editorial">Tổng tiền quyên góp (VNĐ)</div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2>Về TechMpower</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="about-content">
-                <p>TechMpower là dự án từ thiện do học sinh lãnh đạo, với sứ mệnh xây dựng và quyên góp máy tính cho trẻ em khó khăn tại các trại trẻ mồ côi ở Việt Nam.</p>
-                <p>Chúng tôi tin rằng công nghệ là chìa khóa mở ra tương lai, và mọi trẻ em đều xứng đáng có cơ hội tiếp cận với nó.</p>
             </div>
         </div>
     </section>
 
     <!-- Process Section -->
-    <section class="process-section reveal reveal-delay-1">
+    <section id="process" class="process-section process-warm reveal">
         <div class="container">
-            <div class="section-header">
-                <h2>Quy Trình Hoạt Động</h2>
-                <div class="divider"></div>
+            <div class="section-header editorial">
+                <h2 class="section-title-editorial">Quy Trình Hoạt Động</h2>
+                <div class="divider-editorial"></div>
             </div>
-            <div class="process-grid">
-                <div class="process-card reveal">
-                    <div class="process-number">01</div>
-                    <div class="process-icon">💰</div>
+            <div class="process-grid process-editorial">
+                <div class="process-card process-card-editorial reveal">
+                    <div class="process-number-editorial">01</div>
+                    <div class="process-icon-editorial">💰</div>
                     <h3>Quyên Góp</h3>
                     <p>Thu thập tiền từ các sự kiện và đóng góp của cộng đồng</p>
                 </div>
-                <div class="process-card reveal reveal-delay-1">
-                    <div class="process-number">02</div>
-                    <div class="process-icon">🔧</div>
+                <div class="process-card process-card-editorial reveal">
+                    <div class="process-number-editorial">02</div>
+                    <div class="process-icon-editorial">🔧</div>
                     <h3>Xây Dựng</h3>
                     <p>Học sinh lắp ráp máy tính từ các linh kiện chất lượng</p>
                 </div>
-                <div class="process-card reveal reveal-delay-2">
-                    <div class="process-number">03</div>
-                    <div class="process-icon">🎁</div>
+                <div class="process-card process-card-editorial reveal">
+                    <div class="process-number-editorial">03</div>
+                    <div class="process-icon-editorial">🎁</div>
                     <h3>Trao Tặng</h3>
                     <p>Giao máy tính cho các trại trẻ mồ côi và theo dõi tác động</p>
                 </div>
@@ -133,15 +180,15 @@
     </section>
 
     <!-- YouTube Section -->
-    <section class="youtube-section reveal">
+    <section class="youtube-section youtube-warm reveal">
         <div class="container">
-            <div class="section-header">
-                <h2>Hành Trình Của Chúng Tôi</h2>
-                <div class="divider"></div>
+            <div class="section-header editorial">
+                <h2 class="section-title-editorial">Hành Trình Của Chúng Tôi</h2>
+                <div class="divider-editorial"></div>
             </div>
-            <div class="youtube-placeholder">
+            <div class="youtube-placeholder youtube-editorial">
                 <div class="placeholder-content">
-                    <div class="placeholder-icon">🎬</div>
+                    <div class="placeholder-icon-large">🎬</div>
                     <h3>Coming Soon</h3>
                     <p>Kênh YouTube của chúng tôi đang trong quá trình phát triển. Hãy quay lại sau để xem hành trình ý nghĩa của TechMpower!</p>
                 </div>
@@ -150,15 +197,15 @@
     </section>
 
     <!-- Blog Preview -->
-    <section class="blog-preview reveal reveal-delay-1">
+    <section class="blog-preview blog-warm reveal">
         <div class="container">
-            <div class="section-header">
-                <h2>Bài Viết Mới Nhất</h2>
-                <div class="divider"></div>
+            <div class="section-header editorial">
+                <h2 class="section-title-editorial">Bài Viết Mới Nhất</h2>
+                <div class="divider-editorial"></div>
             </div>
-            <div class="blog-grid">
-                <article class="blog-card reveal">
-                    <div class="blog-image placeholder">Ảnh bài viết</div>
+            <div class="blog-grid blog-editorial">
+                <article class="blog-card blog-card-editorial reveal">
+                    <div class="blog-image-placeholder">Ảnh bài viết</div>
                     <div class="blog-content">
                         <span class="blog-category">Sự Kiện</span>
                         <h3>Chuẩn bị cho sự kiện gây quỹ đầu tiên</h3>
@@ -166,8 +213,8 @@
                         <a href="blog.html" class="read-more">Đọc thêm →</a>
                     </div>
                 </article>
-                <article class="blog-card reveal reveal-delay-1">
-                    <div class="blog-image placeholder">Ảnh bài viết</div>
+                <article class="blog-card blog-card-editorial reveal">
+                    <div class="blog-image-placeholder">Ảnh bài viết</div>
                     <div class="blog-content">
                         <span class="blog-category">Xây Dựng PC</span>
                         <h3>Hướng dẫn lắp ráp máy tính cơ bản</h3>
@@ -175,8 +222,8 @@
                         <a href="blog.html" class="read-more">Đọc thêm →</a>
                     </div>
                 </article>
-                <article class="blog-card reveal reveal-delay-2">
-                    <div class="blog-image placeholder">Ảnh bài viết</div>
+                <article class="blog-card blog-card-editorial reveal">
+                    <div class="blog-image-placeholder">Ảnh bài viết</div>
                     <div class="blog-content">
                         <span class="blog-category">Impact</span>
                         <h3>Lần đầu tiên trao tặng máy tính</h3>
@@ -186,17 +233,17 @@
                 </article>
             </div>
             <div class="text-center">
-                <a href="blog.html" class="btn btn-secondary">Xem Tất Cả</a>   
+                <a href="blog.html" class="btn btn-secondary btn-animated">Xem Tất Cả</a>   
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer reveal">
+    <footer class="footer footer-warm reveal">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="logo.png" alt="TechMpower" class="footer-logo">
+            <div class="footer-content footer-editorial">
+                <div class="footer-brand footer-brand-editorial">
+                    <h3 class="footer-title">TechMpower</h3>
                     <p>Bridging Digital Divide, One PC at a Time</p>
                 </div>
                 <div class="footer-links">
@@ -215,11 +262,15 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 TechMpower. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; <span id="current-year">2026</span> TechMpower. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Dynamic year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
