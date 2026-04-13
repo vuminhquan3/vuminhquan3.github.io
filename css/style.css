@@ -1212,3 +1212,13 @@ html {
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1024px) { .blog-layout-editorial { grid-template-columns: 1fr; } .blog-sidebar-editorial { position: static; } .contact-grid-editorial { grid-template-columns: 1fr; } .about-fullwidth { grid-template-columns: 1fr; } }
 @media (max-width: 768px) { .page-title-editorial { font-size: 2.5rem; } .section-title-editorial { font-size: 2rem; } .event-card-editorial { flex-direction: column; } .blog-post-card-editorial { flex-direction: column; } .post-image-placeholder { width: 100%; min-height: 200px; } .social-grid-editorial { grid-template-columns: 1fr; } .overview-cards-editorial, .donation-tiers-editorial, .payment-grid-editorial { grid-template-columns: 1fr; } }
+
+
+/* Add spacing between hero and about section */
+.about-section {
+    margin-top: 6rem;
+}
+
+.about-fullwidth {
+    margin-top: 6rem;
+}
