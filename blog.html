@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - TechMpower</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- PRELOADER -->
     <div class="preloader">
         <div class="preloader-content">
-            <img src="logo.png" alt="TechMpower" class="preloader-logo">
-            <div class="preloader-text">TechMpower</div>
+            <div class="preloader-text animated-gradient">TechMpower</div>
             <div class="preloader-bar"></div>
         </div>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="logo.png" alt="TechMpower Logo" class="logo">
                 <span class="brand-text">TechMpower</span>
             </div>
             <ul class="nav-menu">
@@ -39,23 +38,25 @@
         </div>
     </nav>
 
-    <section class="page-header reveal">
+    <!-- Page Header -->
+    <section class="page-header page-header-warm reveal">
         <div class="container">
-            <h1>Blog</h1>
-            <p>Cập nhật hành trình và câu chuyện của TechMpower</p>
+            <h1 class="page-title-editorial">Blog</h1>
+            <p class="page-subtitle-editorial">Cập nhật hành trình và câu chuyện của TechMpower</p>
         </div>
     </section>
 
-    <section class="blog-section reveal reveal-delay-1">
+    <!-- Blog Section -->
+    <section class="blog-section blog-warm reveal reveal-delay-1">
         <div class="container">
-            <div class="blog-layout">
-                <aside class="blog-sidebar reveal">
-                    <div class="search-box">
+            <div class="blog-layout blog-layout-editorial">
+                <aside class="blog-sidebar blog-sidebar-editorial reveal">
+                    <div class="search-box search-box-editorial">
                         <input type="text" placeholder="Tìm kiếm bài viết...">
                         <button>🔍</button>
                     </div>
 
-                    <div class="categories">
+                    <div class="categories categories-editorial">
                         <h3>Danh Mục</h3>
                         <ul>
                             <li><a href="#" class="active">Tất Cả</a></li>
@@ -68,12 +69,12 @@
                 </aside>
 
                 <main class="blog-main">
-                    <div class="blog-posts">
-                        <article class="blog-post-card reveal">
-                            <div class="post-image placeholder">Ảnh bài viết</div>
+                    <div class="blog-posts blog-posts-editorial">
+                        <article class="blog-post-card blog-post-card-editorial reveal">
+                            <div class="post-image-placeholder">Ảnh bài viết</div>
                             <div class="post-content">
                                 <div class="post-meta">
-                                    <span class="category">Sự Kiện</span>
+                                    <span class="category category-editorial">Sự Kiện</span>
                                     <span class="date">8 Tháng 4, 2026</span>
                                 </div>
                                 <h3>Chuẩn bị cho sự kiện gây quỹ đầu tiên</h3>
@@ -82,11 +83,11 @@
                             </div>
                         </article>
 
-                        <article class="blog-post-card reveal reveal-delay-1">
-                            <div class="post-image placeholder">Ảnh bài viết</div>
+                        <article class="blog-post-card blog-post-card-editorial reveal reveal-delay-1">
+                            <div class="post-image-placeholder">Ảnh bài viết</div>
                             <div class="post-content">
                                 <div class="post-meta">
-                                    <span class="category">Xây Dựng PC</span>
+                                    <span class="category category-editorial">Xây Dựng PC</span>
                                     <span class="date">5 Tháng 4, 2026</span>
                                 </div>
                                 <h3>Hướng dẫn lắp ráp máy tính cơ bản</h3>
@@ -95,11 +96,11 @@
                             </div>
                         </article>
 
-                        <article class="blog-post-card reveal reveal-delay-2">
-                            <div class="post-image placeholder">Ảnh bài viết</div>
+                        <article class="blog-post-card blog-post-card-editorial reveal reveal-delay-2">
+                            <div class="post-image-placeholder">Ảnh bài viết</div>
                             <div class="post-content">
                                 <div class="post-meta">
-                                    <span class="category">Impact</span>
+                                    <span class="category category-editorial">Impact</span>
                                     <span class="date">1 Tháng 4, 2026</span>
                                 </div>
                                 <h3>Lần đầu tiên trao tặng máy tính</h3>
@@ -109,24 +110,48 @@
                         </article>
                     </div>
 
-                    <div class="pagination reveal">
-                        <button class="btn btn-secondary">Trang Trước</button>
+                    <div class="pagination pagination-editorial reveal">
+                        <button class="btn btn-secondary btn-animated">Trang Trước</button>
                         <span class="page-numbers">1 / 3</span>
-                        <button class="btn btn-secondary">Trang Sau</button>
+                        <button class="btn btn-secondary btn-animated">Trang Sau</button>
                     </div>
                 </main>
             </div>
         </div>
     </section>
 
-    <footer class="footer reveal">
+    <!-- Footer -->
+    <footer class="footer footer-warm reveal">
         <div class="container">
+            <div class="footer-content footer-editorial">
+                <div class="footer-brand footer-brand-editorial">
+                    <h3 class="footer-title">TechMpower</h3>
+                    <p>Bridging Digital Divide, One PC at a Time</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="donate.html">Ủng Hộ</a></li>
+                        <li><a href="events.html">Sự Kiện</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Liên Hệ</h4>
+                    <p>Email: contact@techmpower.org</p>
+                    <p>Địa điểm: TP.HCM, Việt Nam</p>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 TechMpower. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; <span id="current-year">2026</span> TechMpower. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
