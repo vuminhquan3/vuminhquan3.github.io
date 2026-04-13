@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ủng Hộ - TechMpower</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- PRELOADER -->
     <div class="preloader">
         <div class="preloader-content">
-            <img src="logo.png" alt="TechMpower" class="preloader-logo">
-            <div class="preloader-text">TechMpower</div>
+            <div class="preloader-text animated-gradient">TechMpower</div>
             <div class="preloader-bar"></div>
         </div>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="logo.png" alt="TechMpower Logo" class="logo">
                 <span class="brand-text">TechMpower</span>
             </div>
             <ul class="nav-menu">
@@ -39,21 +38,23 @@
         </div>
     </nav>
 
-    <section class="page-header reveal">
+    <!-- Page Header -->
+    <section class="page-header page-header-warm reveal">
         <div class="container">
-            <h1>Ủng Hộ TechMpower</h1>
-            <p>Sự đóng góp của bạn thay đổi cuộc sống</p>
+            <h1 class="page-title-editorial">Ủng Hộ TechMpower</h1>
+            <p class="page-subtitle-editorial">Sự đóng góp của bạn thay đổi cuộc sống</p>
         </div>
     </section>
 
-    <section class="donation-section reveal reveal-delay-1">
+    <!-- Donation Section -->
+    <section class="donation-section donation-warm reveal reveal-delay-1">
         <div class="container">
-            <div class="donation-banner">
-                <h2>3.25 Triệu VNĐ = 1 Máy Tính Cho Trẻ Em</h2>
+            <div class="donation-banner donation-banner-editorial">
+                <h2 class="banner-title-editorial">3.25 Triệu VNĐ = 1 Máy Tính Cho Trẻ Em</h2>
             </div>
 
-            <div class="donation-tiers">
-                <div class="tier-card featured reveal">
+            <div class="donation-tiers donation-tiers-editorial">
+                <div class="tier-card tier-card-editorial featured reveal">
                     <div class="tier-badge">Phổ Biến Nhất</div>
                     <h3>Tài Trợ Toàn Bộ</h3>
                     <div class="tier-price">3.250.000 VNĐ</div>
@@ -62,41 +63,42 @@
                         <li>✓ Nhận ảnh giao máy và báo cáo impact</li>
                         <li>✓ Giấy chứng nhận đóng góp</li>
                     </ul>
-                    <button class="btn btn-primary" onclick="selectAmount(3250000)">Chọn Mức Này</button>
+                    <button class="btn btn-primary btn-animated" onclick="selectAmount(3250000)">Chọn Mức Này</button>
                 </div>
 
-                <div class="tier-card reveal reveal-delay-1">
+                <div class="tier-card tier-card-editorial reveal reveal-delay-1">
                     <h3>Tài Trợ Một Nửa</h3>
                     <div class="tier-price">1.625.000 VNĐ</div>
                     <ul class="tier-features">
                         <li>✓ Đóng góp cho 1 PC</li>
                         <li>✓ Cập nhật tiến độ</li>
                     </ul>
-                    <button class="btn btn-secondary" onclick="selectAmount(1625000)">Chọn Mức Này</button>
+                    <button class="btn btn-secondary btn-animated" onclick="selectAmount(1625000)">Chọn Mức Này</button>
                 </div>
 
-                <div class="tier-card reveal reveal-delay-2">
+                <div class="tier-card tier-card-editorial reveal reveal-delay-2">
                     <h3>Tài Trợ Linh Kiện</h3>
                     <div class="tier-price">500K - 1 Triệu VNĐ</div>
                     <ul class="tier-features">
                         <li>✓ Tài trợ phần cụ thể (RAM, ổ cứng, v.v.)</li>
                         <li>✓ Minh bạch chi tiêu</li>
                     </ul>
-                    <button class="btn btn-secondary" onclick="selectAmount(750000)">Chọn Mức Này</button>
+                    <button class="btn btn-secondary btn-animated" onclick="selectAmount(750000)">Chọn Mức Này</button>
                 </div>
 
-                <div class="tier-card reveal">
+                <div class="tier-card tier-card-editorial reveal">
                     <h3>Số Tiền Tùy Chọn</h3>
                     <div class="tier-price">Mọi số tiền đều có giá trị</div>
                     <input type="number" id="customAmount" placeholder="Nhập số tiền (VNĐ)" class="custom-input">
-                    <button class="btn btn-secondary" onclick="selectCustomAmount()">Ủng Hộ</button>
+                    <button class="btn btn-secondary btn-animated" onclick="selectCustomAmount()">Ủng Hộ</button>
                 </div>
             </div>
 
-            <div class="payment-methods reveal reveal-delay-1">
-                <h3>Cách Ủng Hộ</h3>
-                <div class="payment-grid">
-                    <div class="payment-card reveal">
+            <!-- Payment Methods -->
+            <div class="payment-methods payment-methods-editorial reveal">
+                <h3 class="section-subtitle-editorial">Cách Ủng Hộ</h3>
+                <div class="payment-grid payment-grid-editorial">
+                    <div class="payment-card payment-card-editorial reveal">
                         <h4>Chuyển Khoản Ngân Hàng</h4>
                         <div class="qr-placeholder">
                             <p>QR Code Ngân Hàng</p>
@@ -106,11 +108,10 @@
                             <p><strong>Ngân hàng:</strong> [Tên ngân hàng]</p>
                             <p><strong>Số tài khoản:</strong> [Số TK]</p>
                             <p><strong>Chủ tài khoản:</strong> TechMpower</p>
-                            <p><strong>Nội dung:</strong> Ho ten_SDT_So tien</p>
                         </div>
                     </div>
 
-                    <div class="payment-card reveal reveal-delay-1">
+                    <div class="payment-card payment-card-editorial reveal reveal-delay-1">
                         <h4>Momo</h4>
                         <div class="qr-placeholder">
                             <p>QR Code Momo</p>
@@ -120,19 +121,20 @@
                     </div>
                 </div>
 
-                <div class="payment-instruction">
+                <div class="payment-instruction payment-instruction-editorial">
                     <h4>Hướng dẫn:</h4>
                     <ol>
                         <li>Chọn mức ủng hộ phù hợp</li>
                         <li>Chuyển khoản qua ngân hàng hoặc Momo</li>
-                        <li>Sau khi chuyển khoản, vui lòng gửi ảnh chụp màn hình đến <a href="mailto:donate@techmpower.org">donate@techmpower.org</a></li>
+                        <li>Sau khi chuyển khoản, gửi ảnh chụp màn hình đến <a href="mailto:donate@techmpower.org">donate@techmpower.org</a></li>
                         <li>Chúng tôi sẽ xác nhận trong vòng 24-48 giờ</li>
                     </ol>
                 </div>
             </div>
 
-            <div class="progress-section reveal">
-                <h3>Tiến Độ Quyên Góp</h3>
+            <!-- Progress Section -->
+            <div class="progress-section progress-section-editorial reveal reveal-delay-1">
+                <h3 class="section-subtitle-editorial">Tiến Độ Quyên Góp</h3>
                 <div class="progress-container">
                     <div class="progress-info">
                         <span>Đã quyên góp: <strong>0 VNĐ</strong></span>
@@ -145,24 +147,48 @@
                 </div>
             </div>
 
-            <div class="transparency-notice reveal reveal-delay-1">
+            <!-- Transparency Notice -->
+            <div class="transparency-notice transparency-notice-editorial reveal">
                 <h3>100% Minh Bạch</h3>
                 <p>Mọi đồng quyên góp đều dùng để xây dựng máy tính cho trẻ em</p>
-                <a href="transparency.html" class="btn btn-outline">Xem chi tiết sử dụng tiền</a>
+                <a href="transparency.html" class="btn btn-outline btn-animated">Xem chi tiết sử dụng tiền</a>
             </div>
         </div>
     </section>
 
-    <footer class="footer reveal">
+    <!-- Footer -->
+    <footer class="footer footer-warm reveal">
         <div class="container">
+            <div class="footer-content footer-editorial">
+                <div class="footer-brand footer-brand-editorial">
+                    <h3 class="footer-title">TechMpower</h3>
+                    <p>Bridging Digital Divide, One PC at a Time</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="donate.html">Ủng Hộ</a></li>
+                        <li><a href="events.html">Sự Kiện</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Liên Hệ</h4>
+                    <p>Email: contact@techmpower.org</p>
+                    <p>Địa điểm: TP.HCM, Việt Nam</p>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 TechMpower. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; <span id="current-year">2026</span> TechMpower. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
     <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
         function selectAmount(amount) {
             alert(`Bạn đã chọn mức ủng hộ: ${amount.toLocaleString('vi-VN')} VNĐ\nVui lòng chuyển khoản và gửi ảnh chụp màn hình đến donate@techmpower.org`);
         }
