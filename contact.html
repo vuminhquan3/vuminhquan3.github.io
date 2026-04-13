@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liên Hệ - TechMpower</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- PRELOADER -->
     <div class="preloader">
         <div class="preloader-content">
-            <img src="logo.png" alt="TechMpower" class="preloader-logo">
-            <div class="preloader-text">TechMpower</div>
+            <div class="preloader-text animated-gradient">TechMpower</div>
             <div class="preloader-bar"></div>
         </div>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="logo.png" alt="TechMpower Logo" class="logo">
                 <span class="brand-text">TechMpower</span>
             </div>
             <ul class="nav-menu">
@@ -39,19 +38,21 @@
         </div>
     </nav>
 
-    <section class="page-header reveal">
+    <!-- Page Header -->
+    <section class="page-header page-header-warm reveal">
         <div class="container">
-            <h1>Liên Hệ</h1>
-            <p>Chúng tôi luôn sẵn sàng lắng nghe</p>
+            <h1 class="page-title-editorial">Liên Hệ</h1>
+            <p class="page-subtitle-editorial">Chúng tôi luôn sẵn sàng lắng nghe</p>
         </div>
     </section>
 
-    <section class="contact-section reveal reveal-delay-1">
+    <!-- Contact Section -->
+    <section class="contact-section contact-warm reveal reveal-delay-1">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-form-wrapper reveal">
-                    <h3>Gửi Tin Nhắn</h3>
-                    <form class="contact-form" id="contactForm">
+            <div class="contact-grid contact-grid-editorial">
+                <div class="contact-form-wrapper contact-form-wrapper-editorial reveal">
+                    <h3 class="section-subtitle-editorial">Gửi Tin Nhắn</h3>
+                    <form class="contact-form contact-form-editorial" id="contactForm">
                         <div class="form-group">
                             <label for="email">Email *</label>
                             <input type="email" id="email" name="email" required placeholder="your@email.com">
@@ -60,12 +61,12 @@
                             <label for="message">Tin nhắn *</label>
                             <textarea id="message" name="message" rows="6" required placeholder="Nội dung tin nhắn..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                        <button type="submit" class="btn btn-primary btn-animated">Gửi Tin Nhắn</button>
                     </form>
                 </div>
 
-                <div class="contact-info reveal reveal-delay-1">
-                    <div class="info-card">
+                <div class="contact-info contact-info-editorial reveal reveal-delay-1">
+                    <div class="info-card info-card-editorial">
                         <h4>Thông Tin Liên Hệ</h4>
                         <div class="info-item">
                             <span class="icon">📧</span>
@@ -83,18 +84,18 @@
                         </div>
                     </div>
 
-                    <div class="social-links">
+                    <div class="social-links social-links-editorial">
                         <h4>Kết Nối Với Chúng Tôi</h4>
-                        <div class="social-grid">
-                            <a href="#" class="social-link facebook reveal">
+                        <div class="social-grid social-grid-editorial">
+                            <a href="#" class="social-link social-link-editorial facebook reveal">
                                 <span>📘</span>
                                 <p>Facebook</p>
                             </a>
-                            <a href="#" class="social-link youtube reveal reveal-delay-1">
+                            <a href="#" class="social-link social-link-editorial youtube reveal reveal-delay-1">
                                 <span>📺</span>
                                 <p>YouTube</p>
                             </a>
-                            <a href="#" class="social-link instagram reveal reveal-delay-2">
+                            <a href="#" class="social-link social-link-editorial instagram reveal reveal-delay-2">
                                 <span>📷</span>
                                 <p>Instagram</p>
                             </a>
@@ -105,16 +106,39 @@
         </div>
     </section>
 
-    <footer class="footer reveal">
+    <!-- Footer -->
+    <footer class="footer footer-warm reveal">
         <div class="container">
+            <div class="footer-content footer-editorial">
+                <div class="footer-brand footer-brand-editorial">
+                    <h3 class="footer-title">TechMpower</h3>
+                    <p>Bridging Digital Divide, One PC at a Time</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="donate.html">Ủng Hộ</a></li>
+                        <li><a href="events.html">Sự Kiện</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Liên Hệ</h4>
+                    <p>Email: contact@techmpower.org</p>
+                    <p>Địa điểm: TP.HCM, Việt Nam</p>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 TechMpower. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; <span id="current-year">2026</span> TechMpower. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
     <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.');
